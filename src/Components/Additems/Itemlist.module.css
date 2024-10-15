@@ -1,0 +1,173 @@
+.mainContainer{
+    background-color: rgb(13, 34, 18);
+     display: flex;         
+   justify-content: center;
+   align-items: center;
+   justify-content: space-between;
+}
+.allItems{
+    background-color: rgb(1, 13, 9);
+    border-radius: 100px 15px 100px 10px;
+    display:flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 0;
+    width: 100%;  
+    height: auto; 
+    color: aliceblue;
+    box-shadow: 120px 80px 40px 20px rgb(118, 122, 122);
+     
+    
+        font-family: oswald;
+        font-size: 28px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1;
+   }
+   .listItem  {
+    font-size: larger;
+    background-color: rgb(28, 28, 22);
+    font-weight: bolder;
+    text-transform: uppercase;
+   color: wheat;
+   }
+
+  .makeownpizza{
+    font-weight: bolder;
+    font-size: 40px;
+    position: absolute;
+    top:10px;
+    right:10px;
+    padding-right: 20px;
+    color: aliceblue;
+  }
+
+
+
+
+.chef{
+    width: 300px;  /* Adjust to your desired width */
+    height: 300px; /* Adjust to your desired height */
+    overflow: hidden;
+  }
+  
+ .chef img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div without distortion */
+  }
+  .customprice {
+    background-color: rgb(20, 19, 19);
+    color: beige;
+    width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    left: 400px;
+    top: 310px;
+}
+
+    /* HTML: <div class="arrow"></div> */
+    .arrow:nth-child(3){
+      
+      padding-left: 20px;
+      
+      
+
+    }
+.arrow {
+  box-shadow: 3px 3px red, -1em 0 .4em olive;
+  padding:1px;
+  text-decoration: rgb(226, 220, 220);
+  position: absolute;
+  width: 120px; /* Can be in percentage also. */
+    overflow: hidden;      /* Hide overflow content */
+     /* Prevent text from wrapping */
+  margin: 350px;
+    align-content: center;
+    color: rgb(15, 16, 17);
+   
+   bottom: 200px;
+  --t: 30%; /* control the tail part */
+  --h: 30%; /* control the head part */
+  
+  aspect-ratio: 3/2;
+  width: 110px;
+  background: #e4e0df;
+  clip-path: polygon(100% calc(50% - var(--t)/2),var(--h) calc(50% - var(--t)/2),var(--h) 0,0 50%,var(--h) 100%,var(--h) calc(50% + var(--t)/2),100% calc(50% + var(--t)/2));
+
+animation: move 1s infinite alternate; /* Apply the animation */
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0); /* Start position */
+  }
+  100% {
+    transform: translateX(-10px); /* Move back by 10px */
+  }
+}
+    
+ 
+
+    @media (max-width: 600px) {
+        .mainContainer {
+          flex-direction: column;
+        }
+        .mainContainer :nth-child(1){
+            
+            flex-direction: column;
+            
+            margin: 0;
+            padding: 0;
+            }
+            .allItems{
+                background-color: rgb(1, 11, 7);
+                border-radius: 100px 15px 100px 10px;
+                display:flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                width: 100%;  
+                height: auto;              
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                font-size: 25px;
+              }
+            .makeownpizza{
+              font-weight: bolder;
+              font-size: 20px;
+              display: flex;
+              justify-content: center; /* Horizontal center */
+              align-items: center; /* Vertical center */
+               position: relative;
+               padding-left:50px;
+              color: rgb(231, 232, 234);
+             
+            }
+
+
+            
+              .customprice {  
+                position: relative;
+                display: flex;
+                padding-left: 50px;
+                width: 100%;
+                height: auto;
+                left: 0; /* Reset left position */
+                top: 0;  /* Reset top position */
+              }
+              .customprice input{
+                width:43px;
+                padding: 2px;
+               background-color: rgb(225, 225, 236);
+              }
+            
+            
+              .arrow{
+                display: none;
+              }
+              /* HTML: <div class="arrow"></div> */
+            }
+      

@@ -1,0 +1,79 @@
+.mainContainer{
+    position: relative;
+    width:200px;
+    height:200px;
+    border: 2cm;
+    
+    object-fit: cover;
+}
+
+
+.imageContainer{
+    position: absolute;
+    width: 100%; /* Make images responsive */
+  height: 100%; /* Make images responsive */
+  object-fit: cover;
+  padding:0px;
+    
+}
+.mainContainer img[src*="panmain"]{
+    z-index: -1;
+    margin-top: 19px;
+
+
+}
+.mainContainer img[src*="WhiteFluor"]{
+    z-index: 1;
+
+}
+.mainContainer img[src*="MixFluor"]{
+    z-index: 1;
+
+}
+.mainContainer img[src*="Fluor"]{
+    z-index: 1;
+
+}
+.mainContainer img[src*="TomatoSauce"]{
+    z-index: 2;
+
+}
+.mainContainer img[src*="YellowSauce"]{
+    z-index: 2;
+
+}
+.mainContainer img[src*="SoyaSauce"]{
+    z-index: 2;
+
+}
+.mainContainer img[src*="Mashroom"]{
+    position: absolute;
+    z-index: 10;
+
+}
+.mainContainer img[src*="Peproni"]{
+    position: absolute;
+    z-index: 9;
+
+}
+.mainContainer img[src*="MozzrelaCheese"]{
+    position: absolute;
+    z-index: 11;
+
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .mainContainer {
+     /* Set your desired height */
+     border-radius: 30%;
+    background-color: rgb(202, 176, 180); /* Background color */
+    animation: rotate 90s linear infinite; /* Apply the rotation animation */
+  }
+  

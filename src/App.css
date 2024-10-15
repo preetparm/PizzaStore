@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainApp {
+  display: flex;
+  flex-direction: column; /* or row, based on your layout */
+}
+
+.itemlist, .maincusin {
+  width: 100%; /* Make sure they fill the container */
+  margin-bottom: 20px; /* Add space between them */
+}
+.itemlist, .maincusin {
+  flex: 1; /* Allow the divs to grow */
+}

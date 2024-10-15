@@ -1,0 +1,48 @@
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    align-content:center;
+    text-align: center;
+    background-color: aquamarine;
+    
+  }
+    
+  .CusinMain{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+  }
+  .pics {
+    width: 100%;
+  }
+  .HeadingMain{
+    align-items: center;
+    font-size: 90px;
+    background-color: bisque;
+    text-align: center;
+  }
+  
+
+  @media (max-width: 600px) {
+    .CusinMain {
+      flex-direction: column;
+    }
+    .HeadingMain{
+      align-self: center;
+      font-size: 90px;
+      background-color: rgb(7, 11, 1);
+      text-align: center;
+      color: #e9efeee9;
+    }
+
+  }
